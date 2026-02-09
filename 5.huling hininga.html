@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhyme Colections</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .back-nav {
+        max-width: 800px;
+        margin: 20px auto 0;
+        padding: 0 20px;
+      }
+      .back-link {
+        text-decoration: none;
+        color: inherit;
+        font-family: "Inter", sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        opacity: 0.7;
+        transition: opacity 0.3s;
+      }
+      .back-link:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body class="light-mode-active">
+    <nav class="navbar">
+      <a
+        href="index.html"
+        class="logo"
+        style="
+          text-decoration: none;
+          color: inherit;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        "
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        Rhyme
+      </a>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-links" id="dynamic-menu">
+        <li>
+          <label class="minimal-toggle" for="themeToggle">
+            <input
+              type="checkbox"
+              id="themeToggle"
+              onchange="toggleDarkMode()"
+            />
+            <svg
+              class="icon-sun"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg
+              class="icon-moon"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header">
+      <h1>Sa Lahat ng Sandali</h1>
+    </div>
+    <audio id="bgMusic" src="./musics/5.mp3"></audio>
+
+    <div class="container">
+      <div class="card">
+        <div class="poem-content">
+          <p>
+            <strong>1</strong><br />
+            Sa bawat umaga, ikaw ang unang iniisip, <br />
+            Ang ngiti mo’y liwanag sa aking panaginip. Hatid mo ay saya sa bawat
+            saglit, <br />
+            Puso ko'y sa iyo lamang nananaig.,<br />
+            Huwag kang mag-alala, sa lahat ng sandali, <br />
+            Ikaw lang ang pipiliin, muli at muli. <br />
+            Sa mundong ito, ikaw ang tanging lang, <br />
+            Sa piling mo, wala na akong kulang.
+          </p>
+
+          <p>
+            <strong>2</strong><br />
+            Alaala ng iyong halik ay laging sariwa,<br />
+            Natatangi sa bawat tibok ng aking puso.<br />
+            Laging nandiyan ang init ng iyong yakap,<br />
+            Hinding-hindi ko malilimutan ang bawat oras kasama ka.<br />
+            Sa lahat ng sandali, ikaw ang aking mundo.
+          </p>
+
+          <p>
+            <strong>3</strong><br />
+            Ang bawat gabi’y puno ng iyong pangalan,<br />
+            Natutulog ako sa alaala ng iyong pagmamahal.<br />
+            Lihim ng aking puso’y ikaw lamang ang laman,<br />
+            Huwag kang mangamba, sa dilim ikaw ang ilaw.<br />
+            Sa lahat ng sandali, ikaw ang aking gabay.
+          </p>
+
+          <p>
+            <strong>4</strong><br />
+            Sa bawat hakbang at paglalakbay ng buhay,<br />
+            Ang iyong tinig ay musika sa aking pandinig.<br />
+            Laging pinaparamdam ang init ng pag-ibig mo,<br />
+            Hinihigop ko ang bawat sandali kasama ka.<br />
+            Sa lahat ng sandali, ikaw ang aking ligaya.
+          </p>
+
+          <p>
+            <strong>5</strong><br />
+            Sa iyo lang nahanap ang tunay na ginhawa, <br />
+            Puso ko’y himbing sa iyong mga gawa,<br />
+            Kahit ang mundo ay puno ng pangamba, <br />
+            Ikaw ang aking dasal at tanging panata,<br />
+            Mamahalin kita, <br> kahit sa'king Huling Hininga.
+          </p>
+        </div>
+      </div>
+    </div>
+    v>
+
+    <script>
+      const body = document.body;
+      const menuList = document.getElementById("dynamic-menu");
+      const toggleInput = document.getElementById("themeToggle");
+
+      const cards = document.querySelectorAll(".card");
+      const toggleLi = menuList.lastElementChild;
+
+      cards.forEach((card, index) => {
+        const titleElement = card.querySelector("h3");
+        if (titleElement) {
+          const titleText = titleElement.innerText;
+          const cardId = "c-" + index;
+          card.id = cardId;
+
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.href = "#" + cardId;
+          a.innerText = titleText;
+          a.onclick = () =>
+            document.querySelector(".nav-links").classList.remove("active");
+          li.appendChild(a);
+          menuList.insertBefore(li, toggleLi);
+        }
+      });
+
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+      }
+
+      if (localStorage.getItem("theme") === "dark") {
+        enableDarkMode();
+        toggleInput.checked = true;
+      }
+
+      function toggleDarkMode() {
+        if (toggleInput.checked) {
+          enableDarkMode();
+          localStorage.setItem("theme", "dark");
+        } else {
+          enableLightMode();
+          localStorage.setItem("theme", "light");
+        }
+      }
+
+      function enableDarkMode() {
+        body.classList.add("dark", "dark-mode-active");
+        body.classList.remove("light-mode-active");
+      }
+
+      function enableLightMode() {
+        body.classList.remove("dark", "dark-mode-active");
+        body.classList.add("light-mode-active");
+      }
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        const music = document.getElementById("bgMusic");
+        const shouldPlay = localStorage.getItem("playMusic");
+
+        if (shouldPlay === "yes") {
+          music.volume = 0.2; 
+
+          music.play().catch(() => {
+            document.body.addEventListener("click", () => music.play(), {
+              once: true,
+            });
+          });
+
+          music.addEventListener("ended", () => {
+            music.currentTime = 0;
+            music.play();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
